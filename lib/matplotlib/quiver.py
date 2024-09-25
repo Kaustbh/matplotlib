@@ -570,8 +570,8 @@ class Quiver(mcollections.PolyCollection):
         self.stale = True
 
     def _dots_per_unit(self, units):
-        """Return a scale factor for converting from units to pixels."""
-        bb = self.axes.bbox
+        # """Return a scale factor for converting from units to pixels."""
+        # bb = self.axes.bbox
         vl = self.axes.viewLim
         return _api.check_getitem({
             'x': bb.width / vl.width,
